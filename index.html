@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        color: aliceblue;
+      }
+      .grandfather {
+        position: fixed;
+        width: 1450px;
+        height: 300px;
+        background-color: #003472;
+      }
+      .father {
+        position: relative;
+        width: 1000px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: #003472;
+      }
+      .sun1 {
+        position: relative;
+        width: 755px;
+        height: 300px;
+        background-image: url("./img/pic.gif");
+        float: left;
+      }
+      .sun2 {
+        position: relative;
+        width: 245px;
+        height: 300px;
+        background-color: #2e4e7e;
+        float: left;
+      }
+      .grandsun {
+        position: relative;
+        margin: 30px 15px 40px 15px;
+      }
+      .piture {
+        position: relative;
+      }
+      .pcture1 {
+        position: relative;
+        top: 10px;
+      }
+      .pcture2 {
+        position: relative;
+        top: -21px;
+        left: 38px;
+      }
+      .pcture3 {
+        position: relative;
+        left: 76px;
+        top: -52px;
+      }
+      .pcture4 {
+        position: relative;
+        left: 114px;
+        top: -82px;
+      }
+      .p {
+        position: relative;
+        top: -60px;
+      }
+      .contaner {
+        position: relative;
+        /* background-color: bisque; */
+        width: 260px;
+        height: 300px;
+        top: 60px;
+        left: 455px;
+      }
+      .contaner h6 {
+        position: relative;
+        left: 170px;
+      }
+      .text {
+        width: 80px;
+        height: 25px;
+        position: relative;
+        left: 178px;
+        border-right: 3px solid #ffc64b;
+      }
+      .p1 {
+        position: relative;
+        left: 160px;
+        top: 10px;
+      }
+      .p2 {
+        position: relative;
+        left: 2px;
+        top: 10px;
+      }
+      #div1 {
+        background-color: darkgray;
+      }
+      #div2 {
+        background-color: darksalmon;
+      }
+      #div3 {
+        background-color: darkseagreen;
+      }
+      #div3 {
+        background-color: darkseagreen;
+      }
+      button {
+        height: 2px;
+      }
+      .button {
+        position: relative;
+        top: 20px;
+        left: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grandfather">
+      <div class="father">
+        <div class="sun1">
+          <div class="contaner">
+            <h6>YOUDIANSHEJI</h6>
+            <div class="text"><h3>有点设计</h3></div>
+            <p class="p1">以就业为导向</p>
+            <p class="p2">打造理论与实际响结合的实际型人才</p>
+            <div class="button">
+              <button type="button" onclick="showDiv('div1')">btn1</button>
+              <button type="button" onclick="showDiv('div2')">btn2</button>
+              <button type="button" onclick="showDiv('div3')">btn3</button>
+              <button type="button" onclick="showDiv('div4')">btn3</button>
+            </div>
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            <div id="div4"></div>
+          </div>
+        </div>
+        <div class="sun2">
+          <div class="grandsun">
+            <h3>课程介绍</h3>
+            <h5>INTRDUCTION</h5>
+            <div class="picture">
+              <div class="pcture1">
+                <img class="demo" src="./img/icon1.gif" alt="404" />
+              </div>
+              <div class="pcture2">
+                <img src="./img/icon2.gif" alt="404" />
+              </div>
+              <div class="pcture3">
+                <img src="./img/icon3.gif" alt="404" />
+              </div>
+              <div class="pcture4">
+                <img src="./img/icon4.gif" alt="404" />
+              </div>
+            </div>
+            <div class="p">
+              <p>
+                掌握平面设计，网页设计，UI设计，FLASH设计四门主流技术，让你有有点设计
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      let divs = document.querySelectorAll("div");
+      let showDiv = (str) => {
+        for (let div of divs) {
+          div.style.display = "none";
+        }
+        document.getElementById(str).style.display = "block";
+      };
+    </script>
+  </body>
+</html>
